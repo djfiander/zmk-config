@@ -15,3 +15,6 @@
 include:
   - board: proton_c
     shield: naked60
+
+include:
+  - board: dz60rgb_rev1
