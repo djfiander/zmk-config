@@ -1,0 +1,5 @@
+file_format: "1"
+id: onekey
+name: OneKey
+type: sheild
+requires: [pro_micro]

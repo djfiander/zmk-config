@@ -14,5 +14,4 @@
 ---
 include:
   - board: proton_c
-    shield: naked60
-  - board: dz60rgb_rev1
+    sheild: onekey
