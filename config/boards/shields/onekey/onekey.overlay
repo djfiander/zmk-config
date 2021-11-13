@@ -3,15 +3,15 @@
 		zmk,kscan = &kscan1;
   	};
 
-	kscan0: kscan_0 {
-		compatible = "zmk,kscan-gpio-direct";
+	# kscan0: kscan_0 {
+	# 	compatible = "zmk,kscan-gpio-direct";
 
-		label = "KSCAN";
+	# 	label = "KSCAN";
 
-		input-gpios
-			= <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-			;
-	};
+	# 	input-gpios
+	# 		= <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+	# 		;
+	# };
 
 	kscan1: kscan_1 {
 		compatible = "zmk,kscan-gpio-matrix";
