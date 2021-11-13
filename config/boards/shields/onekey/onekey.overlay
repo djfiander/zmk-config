@@ -1,6 +1,6 @@
 / {
 	chosen {
-		zmk,kscan = &kscan0;
+		zmk,kscan = &kscan1;
   	};
 
 	kscan0: kscan_0 {
@@ -10,6 +10,20 @@
 
 		input-gpios
 			= <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			;
+	};
+
+	kscan1: kscan_1 {
+		compatible = "zmk,kscan-gpio-matrix";
+		label = "KSCAN";
+		diode-direction = "col2row";
+
+		col-gpios
+			= <&pro_micro 21 GPIO_ACTIVE_HIGH>
+			;
+
+		row-gpios
+			= <&pro_micro 10 (GPIO_ACTIVE_HIGH|GPIO_PULL_DOWN)>
 			;
 	};
 };
