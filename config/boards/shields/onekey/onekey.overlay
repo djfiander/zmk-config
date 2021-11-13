@@ -1,19 +1,9 @@
 / {
 	chosen {
-		zmk,kscan = &kscan1;
+		zmk,kscan = &kscan0;
   	};
 
-/*	kscan0: kscan_0 {
-		compatible = "zmk,kscan-gpio-direct";
-
-		label = "KSCAN";
-
-		input-gpios
-			= <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-			;
-	};
-*/
-	kscan1: kscan_1 {
+	kscan0: kscan_0 {
 		compatible = "zmk,kscan-gpio-matrix";
 		label = "KSCAN";
 		diode-direction = "col2row";
