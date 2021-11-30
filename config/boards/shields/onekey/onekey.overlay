@@ -4,7 +4,7 @@
   	};
 
 	kscan0: kscan_0 {
-		compatible = "zmk,kscan-gpio-matrix";
+		compatible = "zmk,kscan-gpio-matrix","arduino-pro-micro";
 		label = "KSCAN";
 		diode-direction = "col2row";
 
@@ -14,6 +14,20 @@
 
 		row-gpios
 			= <&pro_micro 10 (GPIO_ACTIVE_HIGH|GPIO_PULL_DOWN)>
+			;
+	};
+
+	kscan0: kscan_0 {
+		compatible = "zmk,kscan-gpio-matrix","adafruit-feather-header";
+		label = "KSCAN";
+		diode-direction = "col2row";
+
+		col-gpios
+			= <&feather_header 15 GPIO_ACTIVE_HIGH>
+			;
+
+		row-gpios
+			= <&feather_header 16 (GPIO_ACTIVE_HIGH|GPIO_PULL_DOWN)>
 			;
 	};
 };
