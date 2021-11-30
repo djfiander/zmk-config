@@ -1,2 +1,12 @@
 config SHIELD_ONEKEY
        def_bool $(shields_list_contains, onekey)
+
+if BOARD_ADAFRUIT_FEATHER_NRF52840
+
+config ZMK_USB
+       default y
+
+config ZMK_BLE
+       default y
+
+endif
