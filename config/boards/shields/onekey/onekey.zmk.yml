@@ -1,5 +1,5 @@
 file_format: "1"
 id: onekey
 name: OneKey
-type: sheild
+type: shield
 requires: [pro_micro]
