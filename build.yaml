@@ -13,5 +13,5 @@
 #
 ---
 include:
-  - board: proton_c
+  - board: adafruit_feather_nrf52840
     shield: onekey
