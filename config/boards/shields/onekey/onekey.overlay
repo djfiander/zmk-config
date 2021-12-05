@@ -2,7 +2,8 @@
 	chosen {
 		zmk,kscan = &kscan0;
   	};
-
+/*
+	// Pro-micro compatible
 	kscan0: kscan_0 {
 		compatible = "zmk,kscan-gpio-matrix","arduino-pro-micro";
 		label = "KSCAN";
@@ -16,18 +17,24 @@
 			= <&pro_micro 10 (GPIO_ACTIVE_HIGH|GPIO_PULL_DOWN)>
 			;
 	};
-
+*/
+	// Feather
 	kscan0: kscan_0 {
-		compatible = "zmk,kscan-gpio-matrix","adafruit-feather-header";
+		compatible = "zmk,kscan-gpio-direct";
 		label = "KSCAN";
-		diode-direction = "col2row";
 
-		col-gpios
-			= <&feather_header 15 GPIO_ACTIVE_HIGH>
-			;
+		input-gpios
+			= <&gpio1 2 (GPIO_ACTIVE_HIGH|GPIO_PULL_DOWN) >;
+	};
+/*
+        // Blackpill
+	kscan0: kscan_0 {
+		compatible = "zmk,kscan-gpio-direct";
+		label = "KSCAN";
 
-		row-gpios
-			= <&feather_header 16 (GPIO_ACTIVE_HIGH|GPIO_PULL_DOWN)>
+		input-gpios
+			= <&gpioa 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 			;
 	};
+*/
 };
