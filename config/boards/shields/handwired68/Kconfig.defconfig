@@ -1,4 +1,4 @@
-if SHEILD_HANDWIRED68
+if SHIELD_HANDWIRED68
 
 config ZMK_KEYBOARD_NAME
        default "Handwired 68keys"
