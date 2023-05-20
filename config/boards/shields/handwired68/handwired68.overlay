@@ -19,28 +19,28 @@
 		diode-direction = "col2row";
 
 		col-gpios =
-			<&gpiob 7  GPIO_ACTIVE_LOW>,
-			<&gpiob 6  GPIO_ACTIVE_LOW>,
-			<&gpiob 5  GPIO_ACTIVE_LOW>,
-			<&gpiob 4  GPIO_ACTIVE_LOW>,
-			<&gpiob 3  GPIO_ACTIVE_LOW>,
-			<&gpiob 2  GPIO_ACTIVE_LOW>,
-			<&gpiob 1  GPIO_ACTIVE_LOW>,
-			<&gpiob 0  GPIO_ACTIVE_LOW>,
-			<&gpioa 4  GPIO_ACTIVE_LOW>,
-			<&gpioa 5  GPIO_ACTIVE_LOW>,
-			<&gpioa 6  GPIO_ACTIVE_LOW>,
-			<&gpioa 7  GPIO_ACTIVE_LOW>,
-			<&gpiob 12 GPIO_ACTIVE_LOW>,
-			<&gpiob 11 GPIO_ACTIVE_LOW>,
-			<&gpiob 10 GPIO_ACTIVE_LOW>;
+			<&gpiob 7  GPIO_ACTIVE_HIGH>,
+			<&gpiob 6  GPIO_ACTIVE_HIGH>,
+			<&gpiob 5  GPIO_ACTIVE_HIGH>,
+			<&gpiob 4  GPIO_ACTIVE_HIGH>,
+			<&gpiob 3  GPIO_ACTIVE_HIGH>,
+			<&gpiob 2  GPIO_ACTIVE_HIGH>,
+			<&gpiob 1  GPIO_ACTIVE_HIGH>,
+			<&gpiob 0  GPIO_ACTIVE_HIGH>,
+			<&gpioa 4  GPIO_ACTIVE_HIGH>,
+			<&gpioa 5  GPIO_ACTIVE_HIGH>,
+			<&gpioa 6  GPIO_ACTIVE_HIGH>,
+			<&gpioa 7  GPIO_ACTIVE_HIGH>,
+			<&gpiob 12 GPIO_ACTIVE_HIGH>,
+			<&gpiob 11 GPIO_ACTIVE_HIGH>,
+			<&gpiob 10 GPIO_ACTIVE_HIGH>;
 
 		row-gpios =
-			<&gpioa 2  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-			<&gpioa 1  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-			<&gpioa 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-			<&gpiob 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-			<&gpiob 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+			<&gpioa 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+			<&gpioa 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+			<&gpioa 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+			<&gpiob 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+			<&gpiob 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 	};
 
 	default_transform: keymap_transform_0 {

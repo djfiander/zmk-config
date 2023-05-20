@@ -1,6 +1,9 @@
 if SHIELD_HANDWIRED68
 
 config ZMK_KEYBOARD_NAME
-       default "Handwired 68keys"
+       default "Handwired 68"
+
+config ZMK_KSCAN_MATRIX_POLLING
+       default y
 
 endif
