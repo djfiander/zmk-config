@@ -30,7 +30,7 @@
 			<&gpioa 4  GPIO_ACTIVE_LOW>,
 			<&gpioa 5  GPIO_ACTIVE_LOW>,
 			<&gpioa 6  GPIO_ACTIVE_LOW>,
-			<&gpioa 8  GPIO_ACTIVE_LOW>,
+			<&gpioa 7  GPIO_ACTIVE_LOW>,
 			<&gpiob 12 GPIO_ACTIVE_LOW>,
 			<&gpiob 11 GPIO_ACTIVE_LOW>,
 			<&gpiob 10 GPIO_ACTIVE_LOW>;
